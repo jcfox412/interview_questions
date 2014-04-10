@@ -1,0 +1,22 @@
+Problem: We have a bunch of servers which serve videos. Each of these servers logs when ever the number of concurrent plays changes. To be more explicit each server generates a log file like this:
+
+Server 1:
+//Timestamp number_of_concurrent_plays
+01:00 3
+03:15 20
+05:01 2
+
+Server 2:
+02:00 10
+03:15 7
+04:00 3
+
+============
+
+We’re trying to generate the total number of concurrent plays, so it should be the combination of the two files. i.e.:
+
+01:00 3
+02:00 13
+03:15 27
+04:00 23
+05:01 5
